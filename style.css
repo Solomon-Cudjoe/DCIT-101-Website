@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Dosis',sans-serif;
+}
+html{
+    background-image: url("img/circle_star_trails_arches_national_park_utah-wallpaper-5120x2880.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.icon{
+    padding: 5px;
+}
+.btn-new button{
+    padding: 7px 30px;
+    margin-left: 15px;
+    margin-top: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #f14a60;
+    background: transparent;
+}
+
+.main{
+  width: 80%;
+margin: auto;
+
+}
+.menu{
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+
+}
+
+ul{
+    flex: 1;
+    text-align: right;
+
+}
+ul li{
+   display: inline block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+ul li a{
+text-decoration: none;
+color: #ddd;
+padding: 0;
+position: relative;
+}
+ul li a::after{
+    content: '';
+    width: 0;
+    height: 10px;
+    background: #ff004c;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20px;
+    transition: 0.5s;
+
+}
+ul li a:hover::after{
+    width: 100%;
+
+}
+.navbar-icons img{
+    height: 25px;
+    margin-inline-start: 40px;
+    cursor: pointer;
+}
+.navbar-icons{
+    margin-left: 40px;
+
+}
+.banner{
+   display: flex;
+   margin-top: 80px; 
+}
+.left-colum, right-coloumn{
+    flex-basis: 50%;
+}
+.right-column img{
+    width: 100%;
+}
+.search-box{
+    width: 45%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+}
+.search-box img{
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    opacity: 50;
+}
+.search-box input{
+    width: 500%;
+    margin-left: 15px;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: bold;
+    border: 0;
+    outline: none;
+    
+}
+.left-column h1{
+   font-size: 100px;
+
+}
+.left-column h2{
+    font-size: 5px;
+}
+span{
+    color: #fff;
+}
+.left-column p{
+    font-size: 5px;
+    color: #fff;
+    margin: 50px 0;
+}
+
+
+
+
+
+.btn button{
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid #fb7381;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fb7381;
+    background: transparent;
+
+}
+.btn .primary-btn{
+    background: linear-gradient(#fb7381, #f14a60);
+    box-shadow: 0 2px 15px rgba(248, 38,103 0.26);
+    color: #fff;
+}
+.btn{
+   margin-bottom: 400px;
+}
+.social-icons{
+    width: 400px;
+    text-align: left;
+    opacity: 2;
+    position: bottom;
+    margin-left: 120px;
+    cursor: pointer;
+    padding-top: 20px;
+
+
+
+
+}
+.social-icons img{
+    height: 20px;
+    margin: 0 17px;
+    align-items: stretch;
+    position: bottom;
+}
+.social-icons::before{
+    content: '';
+    width: 50px;
+    height: 100px;
+    background: #000;
+    position: bottom;
+    right: 160px;
+    
+}
+.social-icons::after{
+    content: '';
+    width: 150px;
+    height: 0px;
+    background: #000;
+    position: top;
+    left: 160px;
+    
+}
+.bottom h1{
+font-size: 100px;
+color: #fff;
+}
+.bottom h2{
+    font-size: 35px 0;
+color: #fff;
+}
+
+.bottom p{
+    font-size: 14px;
+    color: #fff;
+    margin: 10px;
+    position: absolute;
+}
+.bottom img{
+width: 500px;
+}
+@import url("https://fonts.googleapis.com/css?");
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    background-image: url("img/assassins_creed_3_2012-wallpaper-1920x1080.jpg");
+    margin: 50px auto;
+    box-sizing: border-box;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(72,98, 85,6);
+    position: relative;
+
+}
+.container p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #000;
+    letter-spacing: 1px;
+    
+}
+
+.input, .msg .area{
+    width: 10%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+    border: 2px solid #e9eae9;
+    font-size: 14px;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.5s ease;
+}
+
+.login .input{
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+.login .input:last-child{
+    margin-right: 0;
+}
+.msg .area{
+    height: 200px;
+}
+
+.btn{
+    width: 250px;
+    background: #486255;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 5px;
+    padding-bottom: 20px;
+}
+.input:focus,
+.msg .area:focus{
+    border: 2px solid #486255;
+}
+::-webkit-input-placeholder{
+    font-family: "Roboto", sans-serif;
+}
+::-moz-input-placeholder{
+    font-family: "Roboto", sans-serif;
+}
+::-ms-input-placeholder{
+    font-family: "Roboto", sans-serif;
+}
