@@ -4,24 +4,13 @@
 font-family: 'Dosis',sans-serif;
 }
 html{
-    background-image: url("img/circle_star_trails_arches_national_park_utah-wallpaper-5120x2880.jpg");
+    background-color: blanchedalmond;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .icon{
-    padding: 5px;
-}
-.btn-new button{
-    padding: 7px 30px;
-    margin-left: 15px;
-    margin-top: 15px;
-    outline: none;
-    border: 1px solid #fb7381;
-    border-radius: 20px;
-    cursor: pointer;
-    color: #f14a60;
-    background: transparent;
+    padding: 10px;
 }
 
 .main{
@@ -30,52 +19,53 @@ margin: auto;
 
 }
 .menu{
-    margin: 30px auto;
+    width: 400px;
+    float: right;
+    height: 70px;
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-
 }
-
 ul{
-    flex: 1;
-    text-align: right;
-
+    width: 400px;
+    float: left;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-top: 30px;
 }
+
+
 ul li{
-   display: inline block;
     list-style: none;
-    margin: 0 25px;
+    margin-left: 40px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    font-size: 14px;
+    color: #ddd;
 }
 
-ul li a{
+.ul li a{
 text-decoration: none;
-color: #ddd;
-padding: 0;
+color: #fb7381;
+padding-top: 5px;
 position: relative;
+font-weight: bold;
+transition: 0.5s ease-in-out;
 }
-ul li a::after{
-    content: '';
-    width: 0;
-    height: 10px;
-    background: #ff004c;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -20px;
-    transition: 0.5s;
+.ul li a:hover ::after{
+    color: #fb7381;
+}
 
-}
-ul li a:hover::after{
-    width: 100%;
-
-}
 .navbar-icons img{
     height: 25px;
-    margin-inline-start: 40px;
+    margin-inline-start: 50px;
     cursor: pointer;
+    margin-top: 20px;
+    margin-left: 50px;
 }
 .navbar-icons{
-    margin-left: 40px;
+    padding: 20px;
+    position: absolute;
 
 }
 .banner{
@@ -89,11 +79,12 @@ ul li a:hover::after{
     width: 100%;
 }
 .search-box{
-    width: 45%;
+    width: 400px;
     display: flex;
-    padding-bottom: 3px;
     border-bottom: 1px solid #ddd;
     margin: 10px 0 30px;
+    height: 30px;
+    align-items: stretch;
 }
 .search-box img{
     height: 30px;
@@ -102,7 +93,7 @@ ul li a:hover::after{
     opacity: 50;
 }
 .search-box input{
-    width: 500%;
+    width: 400%;
     margin-left: 15px;
     font-size: 17px;
     font-family: 'Times New Roman', Times, serif;
@@ -119,7 +110,7 @@ ul li a:hover::after{
     font-size: 5px;
 }
 span{
-    color: #fff;
+    color: #fb7381;
 }
 .left-column p{
     font-size: 5px;
@@ -140,6 +131,7 @@ span{
     cursor: pointer;
     color: #fb7381;
     background: transparent;
+align-items: center;
 
 }
 .btn .primary-btn{
@@ -158,9 +150,6 @@ span{
     margin-left: 120px;
     cursor: pointer;
     padding-top: 20px;
-
-
-
 
 }
 .social-icons img{
@@ -185,8 +174,8 @@ span{
     background: #000;
     position: top;
     left: 160px;
-    
 }
+
 .bottom h1{
 font-size: 100px;
 color: #fff;
@@ -205,60 +194,64 @@ color: #fff;
 .bottom img{
 width: 500px;
 }
-@import url("https://fonts.googleapis.com/css?");
+
+@import url("fonts.googleapis.com/css?family=Roboto");
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    
+    background-size: cover;
+    height: auto;
+    font-family: "Roboto", sans-serif;
+}
 .container{
-    width: 600px;
-    height: 600px;
-    background-image: url("img/assassins_creed_3_2012-wallpaper-1920x1080.jpg");
+   max-width: 300px;
+    height: 250px;
+    background: #fff;
     margin: 50px auto;
     box-sizing: border-box;
     padding: 40px;
-    box-shadow: 0 0 20px rgba(72,98, 85,6);
-    position: relative;
-
+    box-shadow: 0 0 20px rgba(72,98,85,0.6);
+    position: sticky;
 }
 .container p{
     text-transform: uppercase;
     text-align: center;
     font-size: 45px;
     margin-bottom: 20px;
-    color: #000;
+    color: #486255;
     letter-spacing: 1px;
-    
+    position: static;
 }
-
 .input, .msg .area{
-    width: 10%;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 25px;
-    border: 2px solid #e9eae9;
+    border: 2px solid #e9eaea;
     font-size: 14px;
     border-radius: 5px;
     outline: none;
     transition: all 0.5s ease;
 }
-
 .login .input{
     width: 48%;
     float: left;
-    margin-right: 4%;
+    margin-right: 4px;
 }
 .login .input:last-child{
     margin-right: 0;
+
 }
 .msg .area{
     height: 200px;
 }
-
 .btn{
-    width: 250px;
+    width: 200px;
     background: #486255;
-    height: 50px;
+    height: 20px;
     text-align: center;
     line-height: 50px;
     color: #fff;
@@ -266,7 +259,6 @@ width: 500px;
     margin: 0 auto;
     cursor: pointer;
     border-radius: 5px;
-    padding-bottom: 20px;
 }
 .input:focus,
 .msg .area:focus{
